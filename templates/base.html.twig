@@ -826,73 +826,69 @@
 
                     <div id="two-column-menu">
                     </div>
-                    <ul class="navbar-nav" id="navbar-nav">
-                       
+                    <div class="navbar-nav" id="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                                <i class="ri-account-circle-line"></i> <span data-key="t-pages">Gestion des Utilisateurs</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarPages">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-starter"> Liste des Utilisateurs </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile"> Connexion/Enregistrer
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarProfile">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" data-key="t-simple-page">
+                                                        Page  Connexion</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings"> Créer un Utilisateur </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
-                                <i class="bx bx-menu"></i> <span data-key="t-authentication">Paramètres</span>
+                                <i class="ri-stack-line"></i> <span data-key="t-authentication">Gestion Militaires</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarAuth">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin"> Type demande
+                                        <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin">Gérer Militaire
                                         </a>
                                         <div class="collapse menu-dropdown" id="sidebarSignIn">
                                             <ul class="nav nav-sm flex-column">
                                                 <li class="nav-item">
-                                                    <a href="auth-signin-basic.html" class="nav-link" data-key="t-basic"> Basic
+                                                    <a href="#" class="nav-link" data-key="t-basic"> Créer Militaire
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="auth-signin-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin"> Media
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSignIn">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-signin-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-signin-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin">Type Media
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSignIn">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-signin-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-signin-cover.html" class="nav-link" data-key="t-cover"> Cover
+                                                    <a href="#" class="nav-link" data-key="t-cover"> Listes Militaire
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#sidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignUp" data-key="t-signup"> Attestation
+                                        <a href="#sidebarSignup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignup" data-key="t-signup">Gérer Attestation
                                         </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSignUp">
+                                        <div class="collapse menu-dropdown" id="sidebarSignup">
                                             <ul class="nav nav-sm flex-column">
                                                 <li class="nav-item">
-                                                    <a href="auth-signup-basic.html" class="nav-link" data-key="t-basic"> Basic
+                                                    <a href="#" class="nav-link" data-key="t-basic"> Créer Attestation
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="auth-signup-cover.html" class="nav-link" data-key="t-cover"> Cover
+                                                    <a href="#" class="nav-link" data-key="t-cover"> Liste Attestation
                                                     </a>
                                                 </li>
                                             </ul>
@@ -901,231 +897,146 @@
 
                                     <li class="nav-item">
                                         <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass" data-key="t-password-reset">
-                                            Militaire
+                                          Gérer Affectations
                                         </a>
                                         <div class="collapse menu-dropdown" id="sidebarResetPass">
                                             <ul class="nav nav-sm flex-column">
                                                 <li class="nav-item">
                                                     <a href="auth-pass-reset-basic.html" class="nav-link" data-key="t-basic">
-                                                        Basic </a>
+                                                        Créer Affectation </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="auth-pass-reset-cover.html" class="nav-link" data-key="t-cover">
-                                                        Cover </a>
+                                                        Liste Affectation</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPage">
+                                <i class="ri-pages-line"></i> <span data-key="t-page">Gestion Personnel</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarPage">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile">Gérer Personnel
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarProfile">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                        Créer Personnel </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">Liste Personnels</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="#sidebarchangePass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarchangePass" data-key="t-password-create">
-                                            Affectation
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarchangePass">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-pass-change-basic.html" class="nav-link" data-key="t-basic">
-                                                        Basic </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-pass-change-cover.html" class="nav-link" data-key="t-cover">
-                                                        Cover </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#sidebarLockScreen" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLockScreen" data-key="t-lock-screen">
-                                            Structure
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLockScreen">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-lockscreen-basic.html" class="nav-link" data-key="t-basic">
-                                                        Basic </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-lockscreen-cover.html" class="nav-link" data-key="t-cover">
-                                                        Cover </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout"> Visite
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarSuccessMsg" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSuccessMsg" data-key="t-success-message"> Militaire_Affectation
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSuccessMsg">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-success-msg-basic.html" class="nav-link" data-key="t-basic">
-                                                        Basic </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-success-msg-cover.html" class="nav-link" data-key="t-cover">
-                                                        Cover </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarTwoStep" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTwoStep" data-key="t-two-step-verification"> Demande
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarTwoStep">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-twostep-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-twostep-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarErrors" data-key="t-errors"> Modèle
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarErrors">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-404-basic.html" class="nav-link" data-key="t-404-basic"> 404
-                                                        Basic </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-404-cover.html" class="nav-link" data-key="t-404-cover"> 404
-                                                        Cover </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-404-alt.html" class="nav-link" data-key="t-404-alt"> 404 Alt
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-500.html" class="nav-link" data-key="t-500"> 500 </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-offline.html" class="nav-link" data-key="t-offline-page"> Offline Page </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout"> Personne
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout">Pesonne_Visite
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout"> Utilisateur
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout"> TypeUtilisateur
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout"> Rôles
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                      <li class="nav-item">
-                                        <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout" data-key="t-logout">Utilisateur_Rôles
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarLogout">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-basic.html" class="nav-link" data-key="t-basic"> Basic
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-logout-cover.html" class="nav-link" data-key="t-cover"> Cover
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <a href="#" class="nav-link" data-key="t-starter"> Type Personnel </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+                    
+                    
+                     <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPerson" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPerson">
+                                <i class="ri-layout-3-line"></i> <span data-key="t-person">Gestion Visites</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarPerson">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="#sidebarPersone" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPersonne" data-key="t-profile">Gérer Visite
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarPersone">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                        Enregistrer Visite </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">Liste Personne Visite</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-starter"> Type Personnel </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                   
+                     <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDemande" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemande">
+                                <i class="ri-file-list-3-line"></i> <span data-key="t-person">Gestion Demandes</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDemande">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="#sidebarDemander" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemander" data-key="t-profile">Gérer Demandes
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarDemander">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                        Régiger demande Militaire </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" data-key="t-settings">Rédiger Demande Visite </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-starter"> Types Demandes </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                   
+                    <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarMedia" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedia">
+                                <i class="ri-apps-2-line"></i> <span data-key="t-person">Gestion Media</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarMedia">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="#sidebarMedias" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedias" data-key="t-profile">Enregistrer Media
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebarMedias">
+                                            <ul class="nav nav-sm flex-column">
+                                                <li class="nav-item">
+                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                        Listes des Meidas </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link" data-key="t-settings">Type Media</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" data-key="t-starter"> Types Demandes </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                   
                     </ul>
                 </div>
                 <!-- Sidebar -->
