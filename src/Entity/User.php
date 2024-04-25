@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\SecurityRepository;
+use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-#[ORM\Entity(repositoryClass: SecurityRepository::class)]
-class Security implements UserInterface, PasswordAuthenticatedUserInterface
+#[ORM\Entity(repositoryClass: UserRepository::class)]
+class User
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -18,14 +18,21 @@ class Security implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
 
-    #[ORM\Column]
-    private array $roles = [];
+    // #[ORM\Column]
+    // private array $roles = [];
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?TypeUtilisateur $typeUtilisateur = null;
 
     /**
      * @var string The hashed password
      */
     #[ORM\Column]
     private ?string $password = null;
+
+    #[ORM\Column]
+    private ?string $username = null;
 
     public function getId(): ?int
     {
@@ -44,6 +51,18 @@ class Security implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
+    public function getTypeUtilisateur(): ?TypeUtilisateur
+    {
+        return $this->typeUtilisateur;
+    }
+
+    public function setTypeUtilisateur(?TypeUtilisateur $typeUtilisateur): static
+    {
+        $this->typeUtilisateur = $typeUtilisateur;
+
+        return $this;
+    }
+
     /**
      * A visual identifier that represents this user.
      *
@@ -54,24 +73,24 @@ class Security implements UserInterface, PasswordAuthenticatedUserInterface
         return (string) $this->email;
     }
 
-    /**
-     * @see UserInterface
-     */
-    public function getRoles(): array
-    {
-        $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+    // /**
+    //  * @see UserInterface
+    //  */
+    // public function getRoles(): array
+    // {
+    //     $roles = $this->roles;
+    //     // guarantee every user at least has ROLE_USER
+    //     $roles[] = 'ROLE_USER';
 
-        return array_unique($roles);
-    }
+    //     return array_unique($roles);
+    // }
 
-    public function setRoles(array $roles): static
-    {
-        $this->roles = $roles;
+    // public function setRoles(array $roles): static
+    // {
+    //     $this->roles = $roles;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
     /**
      * @see PasswordAuthenticatedUserInterface
@@ -84,6 +103,19 @@ class Security implements UserInterface, PasswordAuthenticatedUserInterface
     public function setPassword(string $password): static
     {
         $this->password = $password;
+
+        return $this;
+    }
+
+
+    public function getUsername(): string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(string $username): static
+    {
+        $this->username = $username;
 
         return $this;
     }

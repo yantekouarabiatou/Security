@@ -2,6 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\TypeUtilisateur;
+use App\Repository\TypeUtilisateurRepository;
+use App\Entity\User;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Form\InscriptionType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -29,4 +35,36 @@ class SecurityController extends AbstractController
     {
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
+
+    #[Route(path: '/inscription', name: 'app_inscription')]
+    public function inscription(Request $request,EntityManagerInterface $manager,TypeUtilisateurRepository $typeUtilisateurRepository): Response
+    {
+        $typeUtilisateurs= $typeUtilisateurRepository->findAll();
+        $form = $this->createForm(InscriptionType::class);
+        $form->handleRequest($request);
+        // dd($request);
+        if ($form->isSubmitted()) {
+
+         $user = new User();
+
+
+         $typeUtilisateur = new TypeUtilisateur();
+         $typeUtilisateur = $typeUtilisateurRepository->findOneBy(['id' => $request->get('user')['nomTypeUtil']]);
+         $user->setTypeUtilisateur( $typeUtilisateur);
+            $user->setUsername($request->get('User')['username']);
+            $user->setEmail($request->get('user')['email']);
+            $user->setPassword($request->get('user')['password']);
+
+
+            $manager->persist($user);
+            $manager->flush();
+        }
+        return $this->render('inscription/index.html.twig', [
+            'user' => $form->createView(),
+            'typeUtilisateurs'=> $typeUtilisateurs,
+
+        ]);
+
+   
+}
 }
