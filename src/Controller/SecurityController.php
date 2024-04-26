@@ -42,29 +42,26 @@ class SecurityController extends AbstractController
         $typeUtilisateurs= $typeUtilisateurRepository->findAll();
         $form = $this->createForm(InscriptionType::class);
         $form->handleRequest($request);
-        // dd($request);
+         dd($request); 
         if ($form->isSubmitted()) {
-
+            
          $user = new User();
-
-
-         $typeUtilisateur = new TypeUtilisateur();
-         $typeUtilisateur = $typeUtilisateurRepository->findOneBy(['id' => $request->get('user')['nomTypeUtil']]);
-         $user->setTypeUtilisateur( $typeUtilisateur);
-            $user->setUsername($request->get('User')['username']);
+        
+            $user->setUsername($request->get('user')['username']);
             $user->setEmail($request->get('user')['email']);
             $user->setPassword($request->get('user')['password']);
-
-
+            $typeUtilisateur = new TypeUtilisateur();
+            $typeUtilisateur = $typeUtilisateurRepository->findOneBy(['id' => $request->get('user')['typeUtilisateur']]);
+            $user->setTypeUtilisateur( $typeUtilisateur);
+            
             $manager->persist($user);
             $manager->flush();
+           
         }
         return $this->render('inscription/index.html.twig', [
             'user' => $form->createView(),
             'typeUtilisateurs'=> $typeUtilisateurs,
 
         ]);
-
-   
-}
+    }
 }
