@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% endblock %}
+{% block container %}
+{{ form_start(demande, {attr: {class:"row g-3 d-flex justify-content-center align-item-center mt-5"}, id: "block-content"}) }}
+
+        
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">
+                        <tr>
+                            Demande
+                        </tr>
+                    </h4>
+                </div>
+                <!-- end card header -->
+                <div class="card-body">
+                    <div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                {{ form_row(demande.libelle,{attr: {id : 'autoCompleteFruit' }}
+                                ) }}
+                                                
+                            </div>
+                            <div class="col-md-6">
+                                {{ form_row(demande.typeDemande,{attr: {id : 'autoCompleteCars' }}
+                                ) }}
+                                                
+                            </div>
+                            <div class="col-12 d-flex justify-content-center mt-3">
+                        <button class="btn btn-primary btn-lg w-150" type="submit">
+                           Envoyer
+                        </button>
+                    </div>
+                        </div>
+                    <!-- end row -->
+                    </div>
+                </div>
+            <!-- end card-body -->
+            </div>
+        <!-- end card -->
+        </div>
+    <!-- end col -->
+    </div>
+    {{ form_end(demande) }}
+{% endblock %}
+
+

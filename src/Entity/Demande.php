@@ -18,7 +18,7 @@ class Demande
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?typeDemande $typeDemande = null;
+    private ?TypeDemande $typeDemande = null;
 
     public function getId(): ?int
     {

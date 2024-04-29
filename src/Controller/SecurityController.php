@@ -42,17 +42,14 @@ class SecurityController extends AbstractController
         $typeUtilisateurs= $typeUtilisateurRepository->findAll();
         $form = $this->createForm(InscriptionType::class);
         $form->handleRequest($request);
-         dd($request); 
-        if ($form->isSubmitted()) {
-            
-         $user = new User();
+        //  dd($request); 
+        if ($form->isSubmitted() && $form->isValid()) {
+            $user= $form->getData();
         
-            $user->setUsername($request->get('user')['username']);
-            $user->setEmail($request->get('user')['email']);
-            $user->setPassword($request->get('user')['password']);
-            $typeUtilisateur = new TypeUtilisateur();
-            $typeUtilisateur = $typeUtilisateurRepository->findOneBy(['id' => $request->get('user')['typeUtilisateur']]);
-            $user->setTypeUtilisateur( $typeUtilisateur);
+            $username = $user-> getUsername();
+            $email = $user->getEmail();
+            $password = $user->getPassword();
+            $typeUtilisateur = $user->getTypeUtilisateur();
             
             $manager->persist($user);
             $manager->flush();
@@ -65,3 +62,10 @@ class SecurityController extends AbstractController
         ]);
     }
 }
+
+
+
+
+
+
+

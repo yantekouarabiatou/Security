@@ -177,7 +177,7 @@
 
                 <div class="dropdown ms-1 topbar-head-dropdown header-item">
                     <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img id="header-lang-img" src="{{asset('assets/images/flags/us.svg')}}" alt="Header Language" height="20" class="rounded">
+                        <img id="header-lang-img" src="{{asset('assets/images/flags/us.svg" alt="Header Language')}}" height="20" class="rounded">
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
 
@@ -826,217 +826,276 @@
 
                     <div id="two-column-menu">
                     </div>
-                    <div class="navbar-nav" id="navbar-nav">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
-                                <i class="ri-account-circle-line"></i> <span data-key="t-pages">Gestion des Utilisateurs</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarPages">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-starter"> Liste des Utilisateurs </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile"> Connexion/Enregistrer
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarProfile">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-simple-page">
-                                                        Page  Connexion</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings"> Créer un Utilisateur </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
-                                <i class="ri-stack-line"></i> <span data-key="t-authentication">Gestion Militaires</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarAuth">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin">Gérer Militaire
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSignIn">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-basic"> Créer Militaire
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-cover"> Listes Militaire
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarSignup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignup" data-key="t-signup">Gérer Attestation
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarSignup">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-basic"> Créer Attestation
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-cover"> Liste Attestation
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass" data-key="t-password-reset">
-                                          Gérer Affectations
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarResetPass">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="auth-pass-reset-basic.html" class="nav-link" data-key="t-basic">
-                                                        Créer Affectation </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="auth-pass-reset-cover.html" class="nav-link" data-key="t-cover">
-                                                        Liste Affectation</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                       <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarPage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPage">
-                                <i class="ri-pages-line"></i> <span data-key="t-page">Gestion Personnel</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarPage">
-                                <ul class="nav nav-sm flex-column">
-                                    
-                                    <li class="nav-item">
-                                        <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile">Gérer Personnel
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarProfile">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
-                                                        Créer Personnel </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">Liste Personnels</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-starter"> Type Personnel </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    
-                    
-                     <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarPerson" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPerson">
-                                <i class="ri-layout-3-line"></i> <span data-key="t-person">Gestion Visites</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarPerson">
-                                <ul class="nav nav-sm flex-column">
-                                    
-                                    <li class="nav-item">
-                                        <a href="#sidebarPersone" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPersonne" data-key="t-profile">Gérer Visite
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarPersone">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
-                                                        Enregistrer Visite </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">Liste Personne Visite</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-starter"> Type Personnel </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                   
-                     <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarDemande" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemande">
-                                <i class="ri-file-list-3-line"></i> <span data-key="t-person">Gestion Demandes</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarDemande">
-                                <ul class="nav nav-sm flex-column">
-                                    
-                                    <li class="nav-item">
-                                        <a href="#sidebarDemander" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemander" data-key="t-profile">Gérer Demandes
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarDemander">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
-                                                        Régiger demande Militaire </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-settings">Rédiger Demande Visite </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-starter"> Types Demandes </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                   
-                    <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarMedia" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedia">
-                                <i class="ri-apps-2-line"></i> <span data-key="t-person">Gestion Media</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarMedia">
-                                <ul class="nav nav-sm flex-column">
-                                    
-                                    <li class="nav-item">
-                                        <a href="#sidebarMedias" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedias" data-key="t-profile">Enregistrer Media
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarMedias">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
-                                                        Listes des Meidas </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#" class="nav-link" data-key="t-settings">Type Media</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" data-key="t-starter"> Types Demandes </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                   
+                    <ul class="navbar-nav" id="navbar-nav">
+                    <div id="scrollbar">
+                    <div class="container-fluid">
+                        <div id="two-column-menu"></div>
+                        <div class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                                    <i class="ri-account-circle-line"></i>
+                                    <span data-key="t-pages">
+                                        Gestion des Utilisateurs
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarPages">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-key="t-starter">
+                                                Liste des Utilisateurs 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile">
+                                                Connexion/Enregistrer
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarProfile">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-simple-page">
+                                                            Page  Connexion
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">
+                                                            Créer un Utilisateur 
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                                    <i class="ri-stack-line"></i>
+                                    <span data-key="t-authentication">
+                                        Gestion Militaires
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarAuth">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn" data-key="t-signin">
+                                                Gérer Militaire
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarSignIn">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-basic">
+                                                            Créer Militaire
+                                                                                                                
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-cover">
+                                                            Listes Militaire
+                                                                                                                
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#sidebarSignup" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignup" data-key="t-signup">
+                                                Gérer Attestation
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarSignup">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-basic">
+                                                            Créer Attestation
+                                                                                                                
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-cover">
+                                                            Liste Attestation
+                                                                                                                
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass" data-key="t-password-reset">
+                                                Gérer Affectations
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarResetPass">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="auth-pass-reset-basic.html" class="nav-link" data-key="t-basic">
+                                                            Créer Affectation 
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="auth-pass-reset-cover.html" class="nav-link" data-key="t-cover">
+                                                            Liste Affectation
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarPage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPage">
+                                    <i class="ri-pages-line"></i>
+                                    <span data-key="t-page">
+                                        Gestion Personnel
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarPage">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile" data-key="t-profile">
+                                                Gérer Personnel
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarProfile">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                            Créer Personnel 
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">
+                                                            Liste Personnels
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-key="t-starter">
+                                                Type Personnel 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarPerson" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPerson">
+                                    <i class="ri-layout-3-line"></i>
+                                    <span data-key="t-person">
+                                        Gestion Visites
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarPerson">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#sidebarPersone" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPersonne" data-key="t-profile">
+                                                Gérer Visite
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarPersone">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                            Enregistrer Visite 
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile-settings.html" class="nav-link" data-key="t-settings">
+                                                            Liste Personne Visite
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-key="t-starter">
+                                                Type Personnel 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarDemande" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemande">
+                                    <i class="ri-file-list-3-line"></i>
+                                    <span data-key="t-person">
+                                        Gestion Demandes
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarDemande">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#sidebarDemander" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDemander" data-key="t-profile">
+                                                Gérer Demandes
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarDemander">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                            Régiger demande Militaire 
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-settings">
+                                                            Rédiger Demande Visite 
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-key="t-starter">
+                                                Types Demandes 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#sidebarMedia" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedia">
+                                    <i class="ri-apps-2-line"></i>
+                                    <span data-key="t-person">
+                                        Gestion Media
+                                    </span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarMedia">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#sidebarMedias" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMedias" data-key="t-profile">
+                                                Enregistrer Media
+                                                                                        
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="sidebarMedias">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                                            Listes des Meidas 
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link" data-key="t-settings">
+                                                            Type Media
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" data-key="t-starter">
+                                                Types Demandes 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- Sidebar -->
+                </div>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -1054,7 +1113,12 @@
         <div class="main-content">
 
             <div class="page-content">
-               
+                <div class="container-fluid">
+            {% block container %}
+                
+            {% endblock %}
+                    
+                </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
@@ -1231,7 +1295,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme01" name="data-theme" type="radio" value="default" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme01">
-                                    <img src="{{asset('../../assets1/logos/demo/default.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/default.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Default</h5>
@@ -1240,7 +1304,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme02" name="data-theme" type="radio" value="saas" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme02">
-                                    <img src="{{asset('../../assets1/images/demo/saas.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/saas.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Sass</h5>
@@ -1249,7 +1313,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme03" name="data-theme" type="radio" value="corporate" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme03">
-                                    <img src="{{asset('../../assets1/images/demo/corporate.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/corporate.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Corporate</h5>
@@ -1258,7 +1322,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme04" name="data-theme" type="radio" value="galaxy" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme04">
-                                    <img src="{{asset('../../assets1/images/demo/galaxy.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/galaxy.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Galaxy</h5>
@@ -1267,7 +1331,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme05" name="data-theme" type="radio" value="material" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme05">
-                                    <img src="{{asset('../../assets1/images/demo/material.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/material.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Material</h5>
@@ -1276,7 +1340,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme06" name="data-theme" type="radio" value="creative" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme06">
-                                    <img src="{{asset('../../assets1/images/demo/creative.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/creative.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Creative</h5>
@@ -1285,7 +1349,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme07" name="data-theme" type="radio" value="minimal" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme07">
-                                    <img src="{{asset('../../assets1/images/demo/minimal.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/minimal.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Minimal</h5>
@@ -1294,7 +1358,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme08" name="data-theme" type="radio" value="modern" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme08">
-                                    <img src="{{asset('../../assets1/images/demo/modern.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/modern.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Modern</h5>
@@ -1304,7 +1368,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme09" name="data-theme" type="radio" value="interactive" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme09">
-                                    <img src="{{asset('../../assets1/images/demo/interactive.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/interactive.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Interactive</h5>
@@ -1314,7 +1378,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme10" name="data-theme" type="radio" value="classic" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme10">
-                                    <img src="{{asset('../../assets1/images/demo/classic.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/classic.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Classic</h5>
@@ -1324,7 +1388,7 @@
                             <div class="form-check card-radio">
                                 <input id="customizer-theme11" name="data-theme" type="radio" value="vintage" class="form-check-input">
                                 <label class="form-check-label p-0" for="customizer-theme11">
-                                    <img src="{{asset('../../assets1/images/demo/vintage.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('../..assets1/images/demo/vintage.png')}}" alt="" class="img-fluid">
                                 </label>
                             </div>
                             <h5 class="fs-13 text-center fw-medium mt-2">Vintage</h5>
@@ -2067,3 +2131,21 @@
 
 <!-- Mirrored from themesbrand.com/velzon/html/master/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Mar 2024 12:12:38 GMT -->
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

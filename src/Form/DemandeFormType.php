@@ -14,12 +14,18 @@ class DemandeFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('libelle')
+            ->add('libelle',null,[
+                'attr' => [
+                    'class' => 'form-control'
+                ]
+                ])
             ->add('typeDemande', EntityType::class, [
+                'attr' => [
+                    'class' => 'form-control'
+                ],
                 'class' => typeDemande::class,
-'choice_label' => 'id',
-            ])
-        ;
+
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void

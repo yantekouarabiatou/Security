@@ -32,4 +32,7 @@ class TypeDemande
 
         return $this;
     }
+    public function __toString(){
+        return $this->getNom();
+    }
 }
